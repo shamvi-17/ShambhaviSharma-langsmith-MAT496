@@ -87,3 +87,19 @@ This lesson explains the different **types of runs** in an LLM application and h
 
 - **Example**: Metadata (like thread ID) links all runs within a conversation for easier inspection in LangSmith.  
 
+
+## MODULE 2
+
+## Lesson 1: Datasets 
+
+- **Purpose**: Used for systematic testing and benchmarking of LLM applications.  
+- **Definition**: Collections of input-output pairs for evaluating model performance.  
+- **Benefits**:  
+  - Simplify experiment management and progress tracking.  
+  - Allow consistent and repeatable evaluation of LLM behavior.  
+- **Creation Methods**:  
+  - Import from CSV files.  
+  - Create programmatically or generate examples (requires an OpenAI API key).  
+- **Example**: A custom dataset was created with a custom example to demonstrate usage. 
+ 
+
