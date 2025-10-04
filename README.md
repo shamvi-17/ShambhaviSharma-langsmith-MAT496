@@ -1,7 +1,8 @@
 # ShambhaviSharma-langsmith-MAT496
 Intro to langsmith for course MAT496, Roll Number- 2410110313
 
-## MODULE 1 LESSON 1: Tracing Concepts in LangSmith
+## MODULE 1 
+## LESSON 1: Tracing Concepts in LangSmith
 
 - **Projects**: Containers that group multiple traces.  
   - Example: Our project is a RAG application.
@@ -32,3 +33,16 @@ Intro to langsmith for course MAT496, Roll Number- 2410110313
 
 ### LangSmith Interface
 - Provides visual view of traced runs and execution flow.
+
+## Lesson 2: Types of Runs  
+
+This lesson explains the different **types of runs** in an LLM application and how they appear in a trace.  
+
+- **Chain Runs** → represent the overall workflow  
+- **Tool Runs** → represent external calls/tools within the chain  
+- **LLM Runs** → represent direct calls to the language model  
+
+### Why It Matters  
+- Helps distinguish workflow steps for **debugging** and **optimization**  
+- Run hierarchy pinpoints **errors or bottlenecks**  
+- Traces can be **filtered by run type** for focused inspection
