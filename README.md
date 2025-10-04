@@ -115,4 +115,43 @@ This lesson explains the different **types of runs** in an LLM application and h
   - Create custom evaluators to meet specific project needs.  
 - **Example**: A custom evaluator was created using the new LangSmith UI.  
 
+## Lesson 3: Experiments  
+
+This section demonstrates how to **run, evaluate, and optimize a RAG application** using LangSmith. It covers setting up experiments, defining evaluators, and testing different models and datasets.  
+
+### Setup  
+- Set API keys and enable tracing using environment variables or a `.env` file.  
+- Define the **RAG application** with functions for:  
+  - `retrieve_documents` → fetch relevant documents from a vector store  
+  - `generate_response` → generate answers using retrieved context  
+  - `call_openai` → interface with the language model  
+  - `langsmith_rag` → orchestrates retrieval and response generation  
+- Apply the `@traceable` decorator to track runs and chains.  
+
+### Running Experiments  
+- Define **evaluators** to automatically assess model output (e.g., check if responses are concise).  
+- Use a **target function** to map dataset examples to the RAG application input.  
+- Run experiments with `evaluate()` on:  
+  - Entire datasets  
+  - Specific dataset versions (`as_of`)  
+  - Dataset splits (`splits`)  
+  - Individual examples (`example_ids`)  
+- Configure additional parameters:  
+  - **Repetitions** → run multiple times for consistency  
+  - **Concurrency** → parallel execution for speed  
+  - **Metadata** → attach info like model name for easy tracking in the UI  
+
+### Model Experiments  
+- Swap models easily (e.g., `gpt-4o` → `gpt-3.5-turbo`) and compare performance.  
+- Run experiments on different data subsets to analyze performance variations.  
+
+### Evaluator Example  
+
+```python
+def is_concise_enough(reference_outputs: dict, outputs: dict) -> dict:
+    score = len(outputs["output"]) < 1.5 * len(reference_outputs["output"])
+    return {"key": "is_concise", "score": int(score)}
+
+
+
 
