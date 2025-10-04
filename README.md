@@ -73,3 +73,17 @@ This lesson explains the different **types of runs** in an LLM application and h
 3. **RunTree API**  
    - Offers maximum flexibility by manually creating parent/child runs.  
    - Suitable for custom frameworks or highly specific tracing needs.  
+
+
+## Lesson 4: COVERSATIONAL THREADS
+
+
+- **Focus**: Tracing in conversational applications where maintaining context across multiple turns is essential.  
+- **Threads**: Group runs into threads to visualize conversation flow.  
+- **Benefits**:  
+  - Show how context is preserved across user inputs and model responses.  
+  - Help debug issues unique to multi-turn conversations.  
+  - Enable tracing of the entire dialogue, not just individual messages, for better UX understanding.  
+
+- **Example**: Metadata (like thread ID) links all runs within a conversation for easier inspection in LangSmith.  
+
