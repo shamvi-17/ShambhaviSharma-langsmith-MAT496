@@ -101,5 +101,18 @@ This lesson explains the different **types of runs** in an LLM application and h
   - Import from CSV files.  
   - Create programmatically or generate examples (requires an OpenAI API key).  
 - **Example**: A custom dataset was created with a custom example to demonstrate usage. 
- 
+
+## Lesson 2: Evaluators 
+
+- **Purpose**: Automatically assess the quality and accuracy of LLM outputs.  
+- **Types**:  
+  - Exact Match  
+  - Semantic Similarity  
+  - Custom Evaluators  
+- **Usage**:  
+  - Automate output evaluation for efficiency and consistency.  
+  - Combine multiple evaluators for a more comprehensive performance analysis.  
+  - Create custom evaluators to meet specific project needs.  
+- **Example**: A custom evaluator was created using the new LangSmith UI.  
+
 
