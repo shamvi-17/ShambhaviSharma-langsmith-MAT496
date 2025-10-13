@@ -155,7 +155,7 @@ def is_concise_enough(reference_outputs: dict, outputs: dict) -> dict:
 
 ## MODULE 3
 
-## Lesson 1: Playground
+### Lesson 1: Playground
 This lesson centres around iterating different prompts and prompt templates in langsmith playground.
 After uploading the openAI key, in the prompt engineering section of langsmith, we provide the system with basic prompts on which we want the desired output. 
 -For example I wrote a prompt which gave the output as given in the picture below:
@@ -164,7 +164,7 @@ After uploading the openAI key, in the prompt engineering section of langsmith, 
 ![Alt text](image2.png)
 You learn how to configure, run, and observe LLM workflows in real time to understand their behavior and improve performance.
 
-## Lesson 2: Prompt Hub
+### Lesson 2: Prompt Hub
 Prompt Hub in LangSmith lets you create, organize, and test prompts in one place.
 The example prompt they used was:
 “You are a 1600s pirate. You only speak {language}.”
@@ -172,6 +172,15 @@ If {language} = “French”, the same prompt makes it talk like a pirate in Fre
 I understood that Prompt Hub is a tool to manage, test, and improve prompts efficiently, and the pirate example was a fun way to show how one prompt template can generate many creative outputs by just changing the variable.In the end, they also showed how you can connect prompts with RAG, so the model can pull information from your own data instead of just relying on what it already knows.
 **Tweaking:**Changed the example from pirate one to women voting rights, also changed the language from french to hindi. 
 ![Alt text](image3.png)
+
+### Lesson 3: Prompt engineering 
+The video showed how Prompt Hub is like a library of ready-made prompts that you can pick and tweak. In Playground, you can test these prompts interactively to see how the AI responds. They used a "Technical questions" dataset with RAG, so the AI can fetch real, relevant information instead of guessing.
+With Traceable, you can track which parts of the prompt and dataset the AI used, and RunTree lets you visualize the AI’s reasoning step by step. Overall, it’s a simple, structured way to design, test, and debug prompts while keeping results transparent and reliable.
+![Alt text](image4.png)
+![Alt text](image5.png)
+![Alt text](image6.png)
+![Alt text](image7.png)
+![Alt text](image8.png)
 
 
 
