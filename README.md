@@ -160,9 +160,20 @@ This lesson centres around iterating different prompts and prompt templates in l
 After uploading the openAI key, in the prompt engineering section of langsmith, we provide the system with basic prompts on which we want the desired output. 
 -For example I wrote a prompt which gave the output as given in the picture below:
 ![Alt text](image1.png)
-You learn how to configure, run, and observe LLM workflows in real time to understand their behavior and improve performance.
 **Tweaking:** I changed the dataset which themes around Microcontroller Fundamentals.
 ![Alt text](image2.png)
+You learn how to configure, run, and observe LLM workflows in real time to understand their behavior and improve performance.
+
+## Lesson 2: Prompt Hub
+Prompt Hub in LangSmith lets you create, organize, and test prompts in one place.
+The example prompt they used was:
+“You are a 1600s pirate. You only speak {language}.”
+If {language} = “French”, the same prompt makes it talk like a pirate in French.
+I understood that Prompt Hub is a tool to manage, test, and improve prompts efficiently, and the pirate example was a fun way to show how one prompt template can generate many creative outputs by just changing the variable.In the end, they also showed how you can connect prompts with RAG, so the model can pull information from your own data instead of just relying on what it already knows.
+**Tweaking:**Changed the example from pirate one to women voting rights, also changed the language from french to hindi. 
+![Alt text](image3.png)
+
+
 
 
 
