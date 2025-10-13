@@ -151,6 +151,20 @@ This section demonstrates how to **run, evaluate, and optimize a RAG application
 def is_concise_enough(reference_outputs: dict, outputs: dict) -> dict:
     score = len(outputs["output"]) < 1.5 * len(reference_outputs["output"])
     return {"key": "is_concise", "score": int(score)}
+```
+
+## MODULE 3
+
+## Lesson 1: Playground
+This lesson centres around iterating different prompts and prompt templates in langsmith playground.
+After uploading the openAI key, in the prompt engineering section of langsmith, we provide the system with basic prompts on which we want the desired output. 
+-For example I wrote a prompt which gave the output as given in the picture below:
+![Alt text](image1.png)
+You learn how to configure, run, and observe LLM workflows in real time to understand their behavior and improve performance.
+**Tweaking:** I changed the dataset which themes around Microcontroller Fundamentals.
+![Alt text](image2.png)
+
+
 
 
 
