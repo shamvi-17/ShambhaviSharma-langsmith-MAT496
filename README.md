@@ -182,6 +182,13 @@ With Traceable, you can track which parts of the prompt and dataset the AI used,
 ![Alt text](image7.png)
 ![Alt text](image8.png)
 
+### Lesson 4: Prompt canvas 
+- prompt canvas empowers users in their prompt engineering lifecycle
+- we can use LLM to help us write better prompts according to our specific requirements
+- we can use custom quick actions for standarisation and collaboration across our organisation
+![Alt text](image9.png)
+![Alt text](image10.png)
+**Tweaking:** Instead of a pirate, it is an 18th century woman 
 
 
 
